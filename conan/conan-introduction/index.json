@@ -1,0 +1,55 @@
+{
+  "title": "Conan Introduction",
+  "description": "What is Conan and how to install",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "First steps",
+        "text": "step1.0_first_command.md"
+      },
+      {
+        "title": "Open Source",
+        "text": "step1.1_open_source.md"
+      },
+      {
+        "title": "Decentralized package manager",
+        "text": "step1.2_decentralized.md"
+      },
+      {
+        "title": "Binary management",
+        "text": "step1.3_binary.md"
+      },
+      {
+        "title": "Cross platform, build system agnostic",
+        "text": "step1.4_cross.md"
+      },
+      {
+        "title": "Stable",
+        "text": "step1.5_cross.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "foreground.sh",
+      "credits": "http://conan.io"
+    },
+    "finish": {
+      "text": "finish.md",
+      "credits": "http://docs.conan.io"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "Welcome to the Conan course! Please wait while everything gets set up..."
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
