@@ -28,6 +28,14 @@
       {
         "title": "Stable",
         "text": "step1.5_stable.md"
+      },
+      {
+        "title": "Install",
+        "text": "step2.0_install.md"
+      },
+      {
+        "title": "Installing Conan",
+        "text": "step2.1_pip_install.md"
       }
     ],
     "intro": {
