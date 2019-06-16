@@ -12,12 +12,12 @@
       {
         "title": "An MD5 Encrypter using the Poco Libraries",
         "text": "step1.1_md5_search.md",
-        "verify": "verify_md5_search"
+        "verify": "verify_md5_search.sh"
       },
       {
         "title": "Inspecting Poco package",
         "text": "step1.2_md5_inspect.md",
-        "verify": "verify_md5_inspect"
+        "verify": "verify_md5_inspect.sh"
       }
     ],
     "intro": {
