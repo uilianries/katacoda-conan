@@ -32,21 +32,15 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "foreground.sh",
       "credits": "http://conan.io"
     },
     "finish": {
       "text": "finish.md",
       "credits": "http://docs.conan.io"
-    },
-    "assets": {
-      "host01": [
-        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
-      ]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "Welcome to the Conan course! Please wait while everything gets set up..."
   },
   "backend": {

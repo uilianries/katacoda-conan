@@ -1,8 +1,0 @@
-[includedirs]
-.
-
-[libdirs]
-../build/lib
-
-[bindirs]
-../build/lib
