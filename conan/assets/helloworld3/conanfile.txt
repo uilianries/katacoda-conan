@@ -1,0 +1,5 @@
+[requires]
+hellolib/1.0.0@katacoda/testing
+
+[generators]
+cmake
