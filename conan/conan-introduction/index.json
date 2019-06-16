@@ -35,7 +35,8 @@
       },
       {
         "title": "Installing Conan",
-        "text": "step2.1_pip_install.md"
+        "text": "step2.1_pip_install.md",
+        "verify": "pip_install_verify.sh"
       }
     ],
     "intro": {
