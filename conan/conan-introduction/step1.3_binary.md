@@ -5,13 +5,13 @@ sources, what the final binary artifacts are, the package dependencies, etc.
 
 ![binary-management](https://docs.conan.io/en/latest/_images/binary_mgmt.png)
 
-When a package recipe is used in the Conan client, and a “binary package” is built from sources, that
+When a package recipe is used in the Conan client, and a "binary package" is built from sources, that
 binary package will be compatible with specific settings, such as the OS it was created for, the
 compiler and compiler version, or the computer architecture. If the package is built again from the
 same sources but with different settings, (e.g. for a different architecture), a new, different
-binary will be generated. By the way, “binary package” is in quotes because, strictly, it is not
+binary will be generated. By the way, "binary package" is in quotes because, strictly, it is not
 necessarily a binary. A header-only library, for example, will contain just the headers in the
-“binary package”.
+"binary package".
 
 All the binary packages generated from a package recipe are managed and stored coherently. When they
 are uploaded to a remote, they stay connected. Also, different clients building binaries from the
