@@ -1,8 +1,8 @@
 {
     "courses": [
       {
-        "title": "Conan - C/C++ Package Manager",
-        "description": "A full course to learn how to use Conan.io",
+        "title": "Conan, The C/C++ Package Manager",
+        "description": "Learn how to solve your dependencies using Conan",
         "id": "conan"
       }
     ],
