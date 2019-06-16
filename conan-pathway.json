@@ -1,0 +1,18 @@
+{
+    "title": "Conan - C/C++ Package Manager",
+    "description": "A full course to learn how to use Conan.io",
+    "icon": "fa-katacoda",
+    "courses": [
+      {
+        "course_id": "conan-introducition",
+        "title": "Introduction to Conan",
+        "description": "What is Conan"
+      },
+      {
+        "course_id": "conan-getting-started",
+        "title": "Getting Started",
+        "description": "Installing dependencies and searching packages"
+      }
+    ]
+  }
+
