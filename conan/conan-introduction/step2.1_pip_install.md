@@ -4,6 +4,6 @@ Conan provides different ways to get installed, but the recommended way is to us
 
 #### Instructions
 
-1. `pip install conan`{{execute}}
-2. Check which version did we install: `conan --version`{{execute}}
-3. Check the standard help: `conan`{{execute}}
+1. Let's install Conan running `pip install conan`{{execute}}
+2. Check which version did we install with `conan --version`{{execute}}
+3. Check the standard help by calling `conan --help`{{execute}}
