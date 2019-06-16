@@ -18,6 +18,15 @@
         "title": "Inspecting Poco package",
         "text": "step1.2_md5_inspect.md",
         "verify": "verify_md5_inspect.sh"
+      },
+      {
+        "title": "Conanfile",
+        "text": "step1.3_conanfile.md"
+      },
+      {
+        "title": "Intalling Poco",
+        "text": "step1.4_poco_install.md",
+        "verify": "verify_poco_install.sh"
       }
     ],
     "intro": {
