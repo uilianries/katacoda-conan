@@ -31,11 +31,11 @@
       "credits": "http://docs.conan.io"
     },
     "assets": {
-      "MD5Encrypter": [
-        {"file": "wait_setup", "target": "/usr/local/bin/wait_setup", "chmod": "+x"},
-        {"file": "poco_md5/md5.cpp", "target": "poco_md5/md5.cpp"},
-        {"file": "poco_md5/CMakeLists.txt", "target": "poco_md5/CMakeLists.txt"},
-        {"file": "poco_md5/conanfile.txt", "target": "poco_md5/conanfile.txt"}
+      "host01": [
+        {"file": "wait_setup", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "poco_md5/md5.cpp", "target": "poco_md5/"},
+        {"file": "poco_md5/CMakeLists.txt", "target": "poco_md5/"},
+        {"file": "poco_md5/conanfile.txt", "target": "poco_md5/"}
       ]
     }
   },
