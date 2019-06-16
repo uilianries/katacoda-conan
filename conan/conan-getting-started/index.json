@@ -11,7 +11,7 @@
       },
       {
         "title": "An MD5 Encrypter using the Poco Libraries",
-        "text": "step1.1_md5.md",
+        "text": "step1.1_md5_search.md",
         "verify": "verify_md5_search"
       },
       {
