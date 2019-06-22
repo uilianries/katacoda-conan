@@ -16,8 +16,8 @@
       },
       {
         "title": "Overriding requirements",
-        "text": "step1.2_override_deps.md",
-        "verify": "verify_override_deps.sh"
+        "text": "step1.2_override_req.md",
+        "verify": "verify_override_req.sh"
       }
 
     ],
