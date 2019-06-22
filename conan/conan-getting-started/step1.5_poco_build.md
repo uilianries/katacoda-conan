@@ -5,6 +5,6 @@ Now let’s create our build file. Now we are ready to build and run our Encrypt
 
 #### Instructions
 
-1. Run CMake to configure our project `cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release`
+1. Run CMake to configure our project `cmake ..`{{execute}}
 2. Build the example `cmake --build .`{{execute}}
 3. Run! `bin/md5`{{execute}}
