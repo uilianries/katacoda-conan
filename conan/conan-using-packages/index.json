@@ -18,8 +18,12 @@
         "title": "Overriding requirements",
         "text": "step1.2_override_req.md",
         "verify": "verify_override_req.sh"
+      },
+      {
+        "title": "Generators",
+        "text": "step1.3_generators.md",
+        "verify": "verify_generators.sh"
       }
-
     ],
     "intro": {
       "text": "intro.md",
