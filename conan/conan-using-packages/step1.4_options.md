@@ -9,7 +9,7 @@ On the other hand, **options** are intended for package specific configuration t
 default value in the recipe. For example, one package can define that its default linkage is static,
 and this is the linkage that should be used if consumers don't specify otherwise.
 
-Also, You can see the available options for a package by inspecting the recipe with `conan get <reference>` command:
+Also, You can see the available options for a package by inspecting the recipe with `conan get` command:
 
 `conan get Poco/1.9.0@pocoproject/stable`{{execute}}
 
@@ -47,7 +47,7 @@ As an alternative to defining options in the ``conanfile.txt`` file, you can spe
 
 Or even with wildcards, to apply to many packages
 
-`conan install .. -o *:shared=True`{{execute}}
+`conan install poco_requires/ -o *:shared=True`{{execute}}
 
 Conan will install the binaries of the shared library packages, and the example will link with them. You can again inspect the different binaries installed.
 
