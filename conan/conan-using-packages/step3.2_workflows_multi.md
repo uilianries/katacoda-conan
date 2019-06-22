@@ -4,8 +4,8 @@ them without having to re-issue the `conan install` command (Note however, that 
 `cd /root && conan install poco_md5 -s build_type=Debug -if poco_build/debug`{{execute}}
 `cd /root && conan install poco_md5 -s build_type=Release -if poco_build/release`{{execute}}
 
-`cd /root/poco_build/debug && cmake ../../poco_md5 && bin/md5 && cd ../..`{{execute}}
-`cd /root/poco_build/release && cmake ../../poco_md5 && bin/md5 && cd ../..`{{execute}}
+`cd /root/poco_build/debug && cmake ../../poco_md5 && cmake --build . && bin/md5 && cd ../..`{{execute}}
+`cd /root/poco_build/release && cmake ../../poco_md5 && cmake --build . && bin/md5 && cd ../..`{{execute}}
 
 You can either use the ``--install-folder`` or ``-if`` flags to specify where to generate the output files, or manually create the output directory and navigate to it before executing the `conan install` command.
 
