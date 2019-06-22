@@ -12,6 +12,11 @@
         "course_id": "conan-getting-started",
         "title": "Getting Started",
         "description": "Installing dependencies and searching packages"
+      },
+      {
+        "course_id": "conan-using-packages",
+        "title": "Using Packages",
+        "description": "How to setup your project and manage dependencies"
       }
     ]
   }

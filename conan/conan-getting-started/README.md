@@ -1,4 +1,4 @@
-# Conan Introduction
+# Conan Getting Started
 
 [![](http://shields.katacoda.com/katacoda/uilianries/count.svg)](https://katacoda.com/uilianries/courses/conan/conan-getting-started)
 

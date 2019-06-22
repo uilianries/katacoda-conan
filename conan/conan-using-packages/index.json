@@ -1,0 +1,51 @@
+{
+  "title": "Using Packages",
+  "description": "How to setup your project and manage dependencies",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Installing dependencies",
+        "text": "step1.0_install_deps.md",
+        "verify": "verify_install_deps.sh"
+      },
+      {
+        "title": "Requires",
+        "text": "step1.1_requires.md"
+      },
+      {
+        "title": "Overriding requirements",
+        "text": "step1.2_override_deps.md",
+        "verify": "verify_override_deps.sh"
+      }
+
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "courseBase.sh",
+      "code": "foreground.sh",
+      "credits": "http://conan.io"
+    },
+    "finish": {
+      "text": "finish.md",
+      "credits": "http://docs.conan.io"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait_setup", "target": "/usr/local/bin/", "chmod": "+x"},
+        {"file": "poco_md5/md5.cpp", "target": "poco_md5/"},
+        {"file": "poco_md5/CMakeLists.txt", "target": "poco_md5/"},
+        {"file": "poco_md5/conanfile.txt", "target": "poco_md5/"},
+        {"file": "conanfile.txt", "target": "conanfile.txt"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "Welcome to the Conan course! Please wait while everything gets set up..."
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
