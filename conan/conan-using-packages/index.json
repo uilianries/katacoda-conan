@@ -37,7 +37,7 @@
         {"file": "poco_md5/md5.cpp", "target": "poco_md5/"},
         {"file": "poco_md5/CMakeLists.txt", "target": "poco_md5/"},
         {"file": "poco_md5/conanfile.txt", "target": "poco_md5/"},
-        {"file": "conanfile.txt", "target": "conanfile.txt"}
+        {"file": "poco_requires/conanfile.txt", "target": "poco_requires/"}
       ]
     }
   },

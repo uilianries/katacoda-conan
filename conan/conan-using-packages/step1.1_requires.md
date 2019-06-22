@@ -1,4 +1,4 @@
-The required dependencies should be specified in the **[requires]** section.
+The required dependencies should be specified in the **[requires]** section of *conanfile.txt*.
 Here is an example:
 
 ```
