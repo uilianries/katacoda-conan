@@ -23,6 +23,11 @@
         "title": "Generators",
         "text": "step1.3_generators.md",
         "verify": "verify_generators.sh"
+      },
+      {
+        "title": "Options",
+        "text": "step1.4_options.md",
+        "verify": "verify_options.sh"
       }
     ],
     "intro": {
