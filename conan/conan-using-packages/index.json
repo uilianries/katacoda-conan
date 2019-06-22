@@ -28,6 +28,32 @@
         "title": "Options",
         "text": "step1.4_options.md",
         "verify": "verify_options.sh"
+      },
+      {
+        "title": "Imports",
+        "text": "step1.5_imports.md",
+        "verify": "verify_imports.sh"
+      },
+      {
+        "title": "Using profiles",
+        "text": "step2.0_using_profiles.md"
+      },
+      {
+        "title": "Workspaces",
+        "text": "step3.0_workflows.md"
+      },
+      {
+        "title": "Single configuration",
+        "text": "step3.1_workflows_single.md",
+        "verify": "verify_workflows_single.sh"
+      },
+      {
+        "title": "Multi configuration",
+        "text": "step3.2_workflows_multi.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "step4.0_quiz.md"
       }
     ],
     "intro": {
