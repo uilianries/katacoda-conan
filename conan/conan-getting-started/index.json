@@ -32,6 +32,25 @@
         "title": "Building example",
         "text": "step1.5_poco_build.md",
         "verify": "verify_poco_build.sh"
+      },
+      {
+        "title": "Installing dependencies",
+        "text": "step2.0_installation.md",
+        "verify": "verify_installation.sh"
+      },
+      {
+        "title": "Inspecting dependencies",
+        "text": "step3.0_inspecting_deps.md",
+        "verify": "verify_inspecting_deps.sh"
+      },
+      {
+        "title": "Searching packages",
+        "text": "step4.0_searching_packages.md",
+        "verify": "verify_searching_packages.sh"
+      },
+      {
+        "title": "Quiz",
+        "text": "step5.0_quiz.md"
       }
     ],
     "intro": {

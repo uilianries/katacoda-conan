@@ -8,7 +8,6 @@ OpenSSL and zlib. It has also generated a conanbuildinfo.cmake file for our buil
 
 #### Instructions
 
-1. Move to poco_md5 folder `cd poco_md5`{{execute}}
-2. Create a new folder named `build` `mkdir build`{{execute}}
-3. Move to the new folder `build` `cd build`{{execute}}
-4. Install Poco package using Conan install command with the relative path `conan install ..`{{execute}}
+1. Create a new folder named `build` `mkdir build`{{execute}}
+2. Move to the new folder `build` `cd build`{{execute}}
+3. Install Poco package using Conan install command with the relative path `conan install ..`{{execute}}

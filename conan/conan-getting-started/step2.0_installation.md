@@ -12,7 +12,7 @@ command line or taken from the defaults in *<userhome>/.conan/profiles/default* 
 
 ![conan-install-flow](https://docs.conan.io/en/latest/_images/install_flow.png)
 
-For example, the command `conan install . --settings os="Linux" --settings compiler="gcc"`, performs these steps:
+For example, the command `conan install . --settings os="Linux" --settings compiler="gcc"`{{execute}}, performs these steps:
 
 - Checks if the package recipe (for `Poco/1.9.0@pocoproject/stable` package) exists in the local cache. If we are just starting, the
   cache is empty.
