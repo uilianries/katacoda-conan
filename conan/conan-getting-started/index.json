@@ -1,7 +1,7 @@
 {
   "title": "Getting Started",
   "description": "Installing dependencies and searching packages",
-  "difficulty": "Intermediate",
+  "difficulty": "Basic",
   "time": "15 minutes",
   "details": {
     "steps": [
@@ -24,9 +24,14 @@
         "text": "step1.3_conanfile.md"
       },
       {
-        "title": "Intalling Poco",
+        "title": "Installing Poco",
         "text": "step1.4_poco_install.md",
         "verify": "verify_poco_install.sh"
+      },
+      {
+        "title": "Building example",
+        "text": "step1.5_poco_build.md",
+        "verify": "verify_poco_build.sh"
       }
     ],
     "intro": {
