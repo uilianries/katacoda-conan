@@ -25,7 +25,7 @@ source directory in any way. The benefit is that we can clear the build folder a
 
 #### Instructions
 
-1. Enter in `poco_build/`
+1. Enter in `poco_build/` `cd poco_build/`
 2. Run CMake to configure our project `cmake ../poco_md5`{{execute}}
 3. Build the project `cmake --build .`{{execute}}
 4. Run the example `bin/md5`{{execute}}

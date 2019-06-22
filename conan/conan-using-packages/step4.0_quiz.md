@@ -15,10 +15,10 @@ Let's see what you have learned during this scenario.
 ( ) Incorrect
 
 >>Conan is able to generates:<<
-[ ] CMake
-[ ] QMake
+[*] CMake
+[*] QMake
 [ ] toml
-[ ] Visual Studio
+[*] Visual Studio
 
 >>A transitive package requirement version can not be overridden<<
 ( ) Correct
@@ -28,9 +28,11 @@ Let's see what you have learned during this scenario.
 (*) Correct
 ( ) Incorrect
 
->>Conan profiles can be customized with *settings*, *options* and *environment variables*<<
-(*) Correct
-( ) Incorrect
+>>Conan profiles can be customized with:<<
+[*] settings
+[*] options
+[ ] remotes
+[*] environment variables
 
 >>Conan install command does not support a specific profile in the command line<<
 ( ) Correct
