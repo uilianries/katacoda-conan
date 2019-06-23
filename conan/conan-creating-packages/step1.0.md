@@ -1,7 +1,6 @@
 First, let's create a folder for our package recipe, and use the `conan new` helper command that
 will create a working package recipe for us:
 
-`mkdir conan_hello && cd conan_hello`{{execute}}
 `conan new Hello/0.1 -t`{{execute}}
 
 This will generate the following files:
@@ -68,4 +67,4 @@ information is used for files created by generators to be used by consumers, as
 
 #### Instructions
 
-1. Create `conan_hello` according this section
+1. Run `conan new Hello/0.1 -t`{{execute}}
