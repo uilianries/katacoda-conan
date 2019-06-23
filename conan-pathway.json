@@ -17,6 +17,11 @@
         "course_id": "conan-using-packages",
         "title": "Using Packages",
         "description": "How to setup your project and manage dependencies"
+      },
+      {
+        "course_id": "conan-creating-packages",
+        "title": "Creating Packages",
+        "description": "How to create, build and test your packages."
       }
     ]
   }

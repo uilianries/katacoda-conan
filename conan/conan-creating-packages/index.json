@@ -1,0 +1,56 @@
+{
+  "title": "Creating Packages",
+  "description": "How to create, build and test your packages",
+  "difficulty": "Intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Creating the Package Recipe",
+        "text": "step1.0.md",
+        "verify": "verify_step1.0.sh"
+      },
+      {
+        "title": "The test_package Folder",
+        "text": "step1.1.md"
+      },
+      {
+        "title": "Creating and Testing Packages",
+        "text": "step1.2.md",
+        "verify": "verify_step1.2.sh"
+      },
+      {
+        "title": "Settings vs. Options",
+        "text": "step1.3.md",
+        "verify": "verify_step1.3.sh"
+      },
+      {
+        "title": "Recipe and Sources in a Different Repository",
+        "text": "step2.0.md",
+        "verify": "verify_options.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "courseBase.sh",
+      "code": "foreground.sh",
+      "credits": "http://conan.io"
+    },
+    "finish": {
+      "text": "finish.md",
+      "credits": "http://docs.conan.io"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait_setup", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uimessage1": "Welcome to the Conan course! Please wait while everything gets set up..."
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
