@@ -26,7 +26,8 @@
       },
       {
         "title": "Recipe and Sources in a Different Repository",
-        "text": "step2.0.md"
+        "text": "step2.0.md",
+        "verify": "verify_step2.0.sh"
       }
     ],
     "intro": {

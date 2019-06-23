@@ -67,4 +67,4 @@ information is used for files created by generators to be used by consumers, as
 
 #### Instructions
 
-1. Run `conan new Hello/0.1 -t`{{execute}}
+1. Run `conan new Hello/0.1 -t`{{execute}} to create a new Conan project

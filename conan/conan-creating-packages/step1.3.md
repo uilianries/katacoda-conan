@@ -26,3 +26,8 @@ There are situations whereby many packages use the same option, thereby allowing
 #### Instructions
 
 1. Build `Hello/0.1@demo/testing` as shared library.
+
+#### Hints
+
+Conan is able to generate shared or static library for some generators, as CMake.
+Conan uses the option `shared` to detect which library type should be built.

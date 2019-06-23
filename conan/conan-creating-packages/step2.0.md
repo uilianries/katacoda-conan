@@ -43,3 +43,11 @@ You can also use the `tools.Git` class:
 Conan will clone the ``scm url`` and will checkout the ``scm revision``.
 
 The ``source()`` method will be called after the checkout process, so you can still use it to patch something or retrieve more sources, but it is not necessary in most cases.
+
+#### Instructions
+
+Let's replace `source()` method by `scm`
+
+1. In your *conanfile.py*, add `scm` attribute and the respective value to download `conan-io/hello`
+2. Remove `source()` from your Conan recipe
+3. Build your package using the reference `Hello/0.1@conan/stable`
