@@ -30,4 +30,4 @@ test packages for different configurations, you could:
 
 #### Instructions
 
-1. Build your package running `conan create . demo/testing`{{execute}}
+1. Build and test your package running `conan create . demo/testing`{{execute}}
