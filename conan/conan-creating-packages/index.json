@@ -2,7 +2,7 @@
   "title": "Creating Packages",
   "description": "How to create, build and test your packages",
   "difficulty": "Intermediate",
-  "time": "20 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
@@ -28,6 +28,38 @@
         "title": "Recipe and Sources in a Different Repository",
         "text": "step2.0.md",
         "verify": "verify_step2.0.sh"
+      },
+      {
+        "title": "Recipe and Sources in the Same Repository",
+        "text": "step3.0.md"
+      },
+      {
+        "title": "Exporting the Sources with the Recipe: exports_sources",
+        "text": "step3.1.md",
+        "verify": "verify_step3.1.sh"
+      },
+      {
+        "title": "Capturing the Remote and Commit: scm",
+        "text": "step3.2.md",
+        "verify": "verify_step3.2.sh"
+      },
+      {
+        "title": "Packaging Existing Binaries",
+        "text": "step4.0.md"
+      },
+      {
+        "title": "Packaging Pre-built Binaries",
+        "text": "step4.1.md",
+        "verify": "verify_step4.1.sh"
+      },
+      {
+        "title": "Creating and Testing Packages Manually",
+        "text": "step5.0.md",
+        "verify": "verify_step5.0.sh"
+      },
+      {
+        "title": "Package Creation Process",
+        "text": "step5.1.md"
       }
     ],
     "intro": {
