@@ -26,7 +26,7 @@ class HelloConan(ConanFile):
         "type": "git",
         "subfolder": "hello",
         "url": "https://github.com/conan-io/hello.git",
-        "revision": "437676e15da7090a1368255097f51b1a470905a0"
+        "revision": "19380c373eae768b432417058cea2c22980e4b15"
         }
 ```
 
