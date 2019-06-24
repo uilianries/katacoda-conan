@@ -36,5 +36,6 @@ The last two steps can be repeated for any number of configurations.
 
 #### Instructions
 
-1. Create a new conanfile using `--bare`
+1. Create a new conanfile using `--bare` argument
+2. Remove the folder `test_package` by running `rm -rf test_package/`{{execute}}
 2. Create a new Conan package following the reference `Hello/0.1@demo/bare`

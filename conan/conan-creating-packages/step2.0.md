@@ -48,6 +48,6 @@ The ``source()`` method will be called after the checkout process, so you can st
 
 Let's replace `source()` method by `scm`
 
-1. In your *conanfile.py*, add `scm` attribute and the respective value to download `conan-io/hello`
+1. In your `conanfile.py`{{open}}, add `scm` attribute and the respective value to download `conan-io/hello`
 2. Remove `source()` from your Conan recipe
 3. Build your package using the reference `Hello/0.1@conan/stable`

@@ -61,8 +61,9 @@ class HelloConan(ConanFile):
 #### Instructions
 
 1. Add `scm` attribute in `conanfile.py`{{open}} with `conan-io/hello`
-2. Remove `source()` method from `conanfile.py`{{open}}
-3. Create a new package using the reference `Hello/0.1@scm/testing`
+2. The `scm` attribute must contain a specific `revision`
+3. Remove `source()` method from `conanfile.py`{{open}}
+4. Create a new package using the reference `Hello/0.1@scm/testing`
 
 #### Hints
 
