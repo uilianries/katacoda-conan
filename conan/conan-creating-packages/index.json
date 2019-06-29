@@ -60,6 +60,34 @@
       {
         "title": "Package Creation Process",
         "text": "step5.1.md"
+      },
+      {
+        "title": "Defining Package ABI Compatibility",
+        "text": "step6.0.md"
+      },
+      {
+        "title": "Defining a Custom package_id()",
+        "text": "step6.1.md"
+      },
+      {
+        "title": "Dependency Issues",
+        "text": "step6.2.md"
+      },
+      {
+        "title": "Using package_id() for Package Dependencies",
+        "text": "step6.3.md"
+      },
+      {
+        "title": "Versioning Schema",
+        "text": "step6.4.md"
+      },
+      {
+        "title": "Changing the default package-id mode",
+        "text": "step6.5.md"
+      },
+      {
+        "title": "Library Types: Shared, Static, Header-only",
+        "text": "step6.6.md"
       }
     ],
     "intro": {
