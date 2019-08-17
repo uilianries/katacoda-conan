@@ -88,6 +88,11 @@
       {
         "title": "Library Types: Shared, Static, Header-only",
         "text": "step6.6.md"
+      },
+      {
+        "title": "Inspecting Packages",
+        "text": "step7.0.md",
+        "verify": "verify_step7.0.sh"
       }
     ],
     "intro": {
