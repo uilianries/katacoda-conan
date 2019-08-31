@@ -8,8 +8,8 @@ If it is necessary to change the default behavior, the applied versioning schema
     from conans.model.version import Version
 
     class PkgConan(ConanFile):
-        name = "Mylib"
-        version = "1.0"
+        name = "package"
+        version = "6.4"
         settings = "os", "compiler", "build_type", "arch"
         requires = "MyOtherLib/2.0@lasote/stable"
 
@@ -28,6 +28,7 @@ affects the binary package, or even the required package ID can change your own 
 
 You can determine if the following variables within any requirement change the ID of your binary package using the following modes:
 
+```
 +-------------------------+----------+-----------------------------------------+----------+-------------+----------------+
 | **Modes / Variables**   | ``name`` | ``version``                             | ``user`` | ``channel`` | ``package_id`` |
 +=========================+==========+=========================================+==========+=============+================+
@@ -51,17 +52,19 @@ You can determine if the following variables within any requirement change the I
 +-------------------------+----------+-----------------------------------------+----------+-------------+----------------+
 | ``unrelated_mode()``    | No       | No                                      | No       | No          | No             |
 +-------------------------+----------+-----------------------------------------+----------+-------------+----------------+
+```
 
 All the modes can be applied to all dependencies, or to individual ones:
 
+```
       def package_id(self):
           # apply semver_mode for all the dependencies of the package
           self.info.requires.semver_mode()
           # use semver_mode just for MyOtherLib
           self.info.requires["MyOtherLib"].semver_mode()
+```
 
-
-- ``semver_direct_mode()``: This is the default mode. It uses ``semver_mode()`` for direct dependencies (first
+- **semver_direct_mode()**: This is the default mode. It uses ``semver_mode()`` for direct dependencies (first
   level dependencies, directly declared by the package) and ``unrelated_mode()`` for indirect, transitive
   dependencies of the package. It assumes that the binary will be affected by the direct dependencies, which
   they will already encode how their transitive dependencies affect them. This might not always be true, as
@@ -76,11 +79,13 @@ All the modes can be applied to all dependencies, or to individual ones:
   ``MyLib/1.4.5`` will still produce ``MyLib/1.Y.Z`` and thus the same package-id.
   The indirect, transitive dependency doesn't affect the package-id at all.
 
-- ``semver_mode()``: In this mode, only a major release version (starting from **1.0.0**) changes the package ID.
+- **semver_mode()**: In this mode, only a major release version (starting from **1.0.0**) changes the package ID.
   Every version change prior to 1.0.0 changes the package ID, but only major changes after 1.0.0 will be applied.
 
+```
     def package_id(self):
       self.info.requires["MyOtherLib"].semver_mode()
+```
 
   This results in:
 
@@ -92,51 +97,65 @@ All the modes can be applied to all dependencies, or to individual ones:
     MyLib/0.2.3@user/testing       => MyLib/0.2.3
     MyOtherLib/0.3.4@user/testing  => MyOtherLib/0.3.4
 
-- ``major_mode()``: Any change in the major release version (starting from **0.0.0**) changes the package ID.
+- **major_mode()**: Any change in the major release version (starting from **0.0.0**) changes the package ID.
 
+```
     def package_id(self):
       self.info.requires["MyOtherLib"].major_mode()
+```
 
   This mode is basically the same as ``semver_mode``, but the only difference is that major versions ``0.Y.Z``,
   which are considered unstable by semver, are still mapped to only the major, dropping the minor and patch parts.
 
-- ``minor_mode()``: Any change in major or minor (not patch nor build) version of the required dependency changes the package ID.
+- **minor_mode()**: Any change in major or minor (not patch nor build) version of the required dependency changes the package ID.
 
+```
       def package_id(self):
           self.info.requires["MyOtherLib"].minor_mode()
+```
 
-- ``patch_mode()``: Any changes to major, minor or patch (not build) versions of the required dependency change the package ID.
+- **patch_mode()**: Any changes to major, minor or patch (not build) versions of the required dependency change the package ID.
 
+```
       def package_id(self):
           self.info.requires["MyOtherLib"].patch_mode()
+```
 
-- ``base_mode()``: Any changes to the base of the version (not build) of the required dependency changes the package ID. Note that in the
+- **base_mode()**: Any changes to the base of the version (not build) of the required dependency changes the package ID. Note that in the
   case of semver notation this may produce the same result as ``patch_mode()``, but it is actually intended to dismiss the build part of the
   version even without strict semver.
 
+```
       def package_id(self):
           self.info.requires["MyOtherLib"].base_mode()
+```
 
-- ``full_version_mode()``: Any changes to the version of the required dependency changes the package ID.
+- **full_version_mode()**: Any changes to the version of the required dependency changes the package ID.
 
+```
     def package_id(self):
       self.info.requires["MyOtherLib"].full_version_mode()
+```
 
     MyOtherLib/1.3.4-a4+b3@user/testing  => MyOtherLib/1.3.4-a4+b3
 
-- ``full_recipe_mode()``: Any change in the reference of the requirement (user & channel too) changes the package ID.
+- **full_recipe_mode()**: Any change in the reference of the requirement (user & channel too) changes the package ID.
 
+```
     def package_id(self):
       self.info.requires["MyOtherLib"].full_recipe_mode()
+```
 
   This keeps the whole dependency reference, except the package-id of the dependency.
 
     MyOtherLib/1.3.4-a4+b3@user/testing  => MyOtherLib/1.3.4-a4+b3@user/testing
 
-- ``full_package_mode()``: Any change in the required version, user, channel or package ID changes the package ID.
+- **full_package_mode()**: Any change in the required version, user, channel or package ID changes the package ID.
 
+```
     def package_id(self):
       self.info.requires["MyOtherLib"].full_package_mode()
+```
 
   This is the stricter mode. Any change to the dependency, including its binary package-id, will in turn
   produce a new package-id for the consumer package.
@@ -145,11 +164,14 @@ All the modes can be applied to all dependencies, or to individual ones:
 
 - ``unrelated_mode()``: Requirements do not change the package ID.
 
+```
       def package_id(self):
           self.info.requires["MyOtherLib"].unrelated_mode()
+```
 
 You can also adjust the individual properties manually:
 
+```
     def package_id(self):
         myotherlib = self.info.requires["MyOtherLib"]
 
@@ -162,6 +184,7 @@ You can also adjust the individual properties manually:
         myotherlib.name = myotherlib.full_name
         myotherlib.user = myotherlib.package_id = myotherlib.version = None
         myotherlib.channel = myotherlib.full_channel
+```
 
 The result of the ``package_id()`` is the package ID hash, but the details can be checked in the
 generated *conaninfo.txt* file. The ``[requires]``, ``[options]`` and ``[settings]`` are taken
@@ -170,8 +193,18 @@ complete reference information.
 
 The default behavior produces a *conaninfo.txt* that looks like:
 
+```
     [requires]
     MyOtherLib/2.Y.Z
 
     [full_requires]
     MyOtherLib/2.2@demo/testing:73bce3fd7eb82b2eabc19fe11317d37da81afa56
+```
+
+#### Instructions
+
+Let's change the versioning schema from our recipe:
+
+1. In your `conanfile.py`{{open}}, add `package_id` method as demonstrated above
+2. Configure to all requirements use `full_versions_mode` as versioning mode.
+3. Build your package using the reference `package/6.4@conan/testing`

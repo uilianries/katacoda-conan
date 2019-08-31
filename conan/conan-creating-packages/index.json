@@ -63,11 +63,13 @@
       },
       {
         "title": "Defining Package ABI Compatibility",
-        "text": "step6.0.md"
+        "text": "step6.0.md",
+        "verify": "verify_step6.1.sh"
       },
       {
         "title": "Defining a Custom package_id()",
-        "text": "step6.1.md"
+        "text": "step6.1.md",
+        "verify": "verify_step6.1.sh"
       },
       {
         "title": "Dependency Issues",
@@ -79,11 +81,13 @@
       },
       {
         "title": "Versioning Schema",
-        "text": "step6.4.md"
+        "text": "step6.4.md",
+        "verify": "verify_step6.4.sh"
       },
       {
         "title": "Changing the default package-id mode",
-        "text": "step6.5.md"
+        "text": "step6.5.md",
+        "verify": "verify_step6.5.sh"
       },
       {
         "title": "Library Types: Shared, Static, Header-only",
